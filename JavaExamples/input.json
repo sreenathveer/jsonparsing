@@ -1,0 +1,140 @@
+{
+	"UniqueKey": {
+		"storeNbr": "DStrNbr",
+		"rxNbr": "DrxNbr",
+		"fillNbr": "DfillNbr",
+		"fillNbrDispensed": "DfillNbrDispensed",
+		"planId": "DplanId",
+		"fillTypeCd": "DfillTypeCd",
+		"p2000SortingDttm": "Dp2000SortingDttm",
+		"fillAdjudicationCd": "DfillAdjudicationCd",
+		"fillDeleteAdjudicationCd": "DfillDeleteAdjudicationCd"
+	},
+	"submittedSegments": {
+	
+		"header": {
+			"IIN": "098899IIN"
+		},
+		"patient": {
+			"species": "Dspecies"
+		},
+		"claim": {
+			"submissionClarificationCodes": ["submissionClarificationCodes", "submissionClarificationCodes0"],
+			"submissionTypeCodes": ["submissionTypeCodes", "submissionTypeCodes0"],
+			"associatedPrescriptionReferenceNumber": [{
+				"QualifierGroup": {
+					"qualifier": "Dqualifier0",
+					"id": "Did0"
+				}
+			}],
+			"totalPrescribedQuantityRemaining": "DtotalPrescribedQuantityRemaining",
+			"preparationEnvironmentEventCode": "DpreparationEnvironmentEventCode",
+			"doNotDispenseBeforeDate": "DdoNotDispenseBeforeDate"
+		},
+		"prescriber": {
+			"prescriberStreetAddressLine1": "DprescriberStreetAddressLine1",
+			"prescriberDEANumber": "DprescriberDEANumber",
+			"prescriberPlaceOfService": "DprescriberPlaceOfService"
+		},
+		"COB": {
+			"otherPayer": [{
+					"otherPayerAdjudicatedProgramType": "otherPayerAdjudicatedProgramType",
+					"otherPayerReconciliationId": "otherPayerReconciliationId"
+				},
+				{
+					"otherPayerAdjudicatedProgramType": "otherPayerAdjudicatedProgramType",
+					"otherPayerReconciliationId": "otherPayerReconciliationId"
+				}
+			],
+			"otherPayerPercentageTaxExemptIndicator": "DotherPayerPercentageTaxExemptIndicator",
+			"otherPayerRegulatoryFee": [{
+					"otherPayerRegulatoryFeeTypeCode": "otherPayerRegulatoryFeeTypeCode",
+					"otherPayerRegulatoryFeeExemptIndicator": "otherPayerRegulatoryFeeExemptIndicator"
+				},
+				{
+					"otherPayerRegulatoryFeeTypeCode": "otherPayerRegulatoryFeeTypeCode1",
+					"otherPayerRegulatoryFeeExemptIndicator": "otherPayerRegulatoryFeeExemptIndicator1"
+				}
+			],
+			"benefitStageIndicator": ["benefitStageIndicator", "benefitStageIndicator1"]
+			},
+
+			"pricing": {
+				"regulatoryFeeTypeCode": [
+					"regulatoryFeeTypeCode",
+					"regulatoryFeeTypeCode1"
+				]
+			},
+			"compound": {
+				"compoundLevelOfComplexity": "compoundLevelOfComplexity"
+			},
+			"provider": {
+				"providerFirstName": "providerFirstName1",
+				"providerLastName": "providerLastName1"
+			},
+			"intermediary": {
+				"intermediaryId": [{
+						"intermediaryIdTypeCode": "intermediaryIdTypeCode",
+						"intermediaryIdTypeEntity": "intermediaryIdTypeEntity",
+						"intermediaryIdTypeQualifier": "intermediaryIdTypeQualifier",
+						"intermediaryId": "intermediaryId",
+						"IntermediaryIdStateAddress": "IntermediaryIdStateAddress"
+					},
+					{
+						"intermediaryIdTypeCode": "1intermediaryIdTypeCode",
+						"intermediaryIdTypeEntity": "1intermediaryIdTypeEntity",
+						"intermediaryIdTypeQualifier": "1intermediaryIdTypeQualifier",
+						"intermediaryId": "1intermediaryId",
+						"IntermediaryIdStateAddress": "IntermediaryIdStateAddress"
+					}
+				]
+			}
+
+		
+	}	,
+		"ReceivedSegments": {
+			"status": {
+
+				"reconciliationId": "reconciliationId",
+				"helpdeskSupport": [{
+					"helpDeskSupportType": "helpDeskSupportType",
+					"helpDeskBusinessUnit": [{
+						"helpDeskBusinessUnitType": "helpDeskBusinessUnitType",
+						"helpDeskContactInformationQualifier": "helpDeskContactInformationQualifier",
+						"helpDeskContactInformation": "helpDeskContactInformation",
+						"helpDeskContactInformationExtension": "helpDeskContactInformationExtension"
+					}]
+				}]
+			},
+			"claim": {
+				"formularyAlternative": [{
+					"formularyAlternativeEffectiveDate": "DformularyAlternativeEffectiveDate",
+					"formularyAlternativePlanBenefitTier": "DformularyAlternativePlanBenefitTier",
+					"formularyAlternativeReasonCode": "DformularyAlternativeReasonCode",
+					"formularyAlternativeRequiredTherapy": [{
+						"formularyAlternativeRequiredTherapyIndicator": "formularyAlternativeRequiredTherapyIndicator",
+						"formularyAlternativeRequiredTherapyTimePeriodQualifier": "formularyAlternativeRequiredTherapyTimePeriodQualifier",
+						"formularyAlternativeRequiredTherapyTimePeriodDuration": "formularyAlternativeRequiredTherapyTimePeriodDuration",
+						"formularyAlternativeRequiredTherapyTimePeriodStartDate": "formularyAlternativeRequiredTherapyTimePeriodStartDate",
+						"formularyAlternativeRequiredTherapyTimePeriodEndDate": "formularyAlternativeRequiredTherapyTimePeriodEndDate"
+					}]
+				}]
+			},
+			"pricing": {
+				"regulatoryFee": [{
+					"regulatoryFeeTypeCode": "regulatoryFeeTypeCode",
+					"regulatoryFeeExemptIndicator": "regulatoryFeeExemptIndicator"
+				}],
+
+				"patientRegulatorFeeAmount": "SpatientRegulatorFeeAmount",
+				"patientPayComponent": {
+					"patientPayComponentQualifier": "patientPayComponentQualifier",
+					"patientPayComponentAmount": "patientPayComponentAmount"
+				},
+				"benefitStageIndicator": ["benefitStageIndicator", "benefitStageIndicator1"]
+			}
+
+
+
+		}
+	}
